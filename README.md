@@ -7,4 +7,5 @@ To setup the configuration on a new machine, do the following:
 2. Create your `~/.vimrc` file with the following command:  
 
         echo "runtime vimrc" > ~/.vimrc  
-which will load the configuration in `~/.vim/vimrc` at runtime.
+
+   which will load the configuration in `~/.vim/vimrc` at runtime.
