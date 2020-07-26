@@ -29,6 +29,9 @@ set swapfile "default on
 nnoremap <C-j> :bprev<CR>
 nnoremap <C-k> :bnext<CR>
 
+" insert single character in command mode
+nnoremap <Space> i_<Esc>r
+
 " show current line number
 set number
 " show relative line numbers
