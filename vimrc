@@ -29,8 +29,10 @@ set swapfile "default on
 nnoremap <C-j> :bprev<CR>
 nnoremap <C-k> :bnext<CR>
 
-" insert single character in command mode
+" insert single character at the cursor position in command mode
 nnoremap <Space> i_<Esc>r
+" insert single character after the cursor position in command mode
+nnoremap <Tab><Space> a_<Esc>r
 
 " show current line number
 set number
