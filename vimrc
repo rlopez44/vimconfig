@@ -51,6 +51,9 @@ endfunction
 " toggle relative line number
 nnoremap <silent><C-l> :call g:ToggleRelativeNumber()<CR>
 
+" shortcut to open NERDTree
+nnoremap <C-n> :NERDTree<CR>
+
 " code folding
 set foldmethod=manual
 
