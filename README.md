@@ -20,6 +20,7 @@ The following plugins should be installed in `~/.vim/pack/` to finalize the conf
 * [`jedi-vim`](https://github.com/davidhalter/jedi-vim)
 * [`nerdtree`](https://github.com/preservim/nerdtree)
 * [`python-syntax`](https://github.com/vim-python/python-syntax)
+* [`vim-javascript`](https://github.com/pangloss/vim-javascript)
 
-Install `gruvbox` to `~/.vim/pack/color/start/` and the other three plugins to
+Install `gruvbox` to `~/.vim/pack/color/start/` and the other four plugins to
 `~/.vim/pack/syntax/start/` by cloning the corresponding repos into these directories.
