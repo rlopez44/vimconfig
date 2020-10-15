@@ -52,17 +52,11 @@ endfunction
 nnoremap <silent><C-l> :call g:ToggleRelativeNumber()<CR>
 
 " code folding
-set foldmethod=indent
-set foldnestmax=10
-set nofoldenable
+set foldmethod=manual
 
 " for auto indenting
 set autoindent
 set smartindent
-
-" so that python comments get folded as well, since default ignore is '#'
-autocmd FileType python set foldignore=""
-set foldlevel=2
 
 " so that vim loads all html files with django template syntax
 autocmd BufNewFile,BufRead *.html set filetype=htmldjango
