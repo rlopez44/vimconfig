@@ -39,6 +39,18 @@ set number
 " show relative line numbers
 set relativenumber
 
+" function to toggle relative line numbers
+function! g:ToggleRelativeNumber()
+    if &relativenumber == 1
+        set norelativenumber
+    else
+        set relativenumber
+    endif
+endfunction
+
+" toggle relative line number
+nnoremap <silent><C-l> :call g:ToggleRelativeNumber()<CR>
+
 " code folding
 set foldmethod=indent
 set foldnestmax=10
