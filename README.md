@@ -16,11 +16,15 @@ new machine, do the following:
 
 The following plugins should be installed in `~/.vim/pack/` to finalize the configuration.
 
-* [`gruvbox`](https://github.com/morhetz/gruvbox)
-* [`jedi-vim`](https://github.com/davidhalter/jedi-vim)
-* [`nerdtree`](https://github.com/preservim/nerdtree)
-* [`python-syntax`](https://github.com/vim-python/python-syntax)
-* [`vim-javascript`](https://github.com/pangloss/vim-javascript)
-
-Install `gruvbox` to `~/.vim/pack/color/start/` and the other four plugins to
-`~/.vim/pack/syntax/start/` by cloning the corresponding repos into these directories.
+* Install to `~/.vim/pack/color/start/`
+    * [`gruvbox`](https://github.com/morhetz/gruvbox)
+* Install to `~/.vim/pack/syntax/start/`
+    * [`jedi-vim`](https://github.com/davidhalter/jedi-vim)
+    * [`python-syntax`](https://github.com/vim-python/python-syntax)
+    * [`vim-javascript`](https://github.com/pangloss/vim-javascript)
+* Install to `~/.vim/pack/dist/start/`
+    * [`nerdtree`](https://github.com/preservim/nerdtree)
+    * [`vim-airline`](https://github.com/vim-airline/vim-airline)
+    * [`vim-fugitive`](https://github.com/tpope/vim-fugitive)
+    * [`vim-gitgutter`](https://github.com/airblade/vim-gitgutter) (Note: if using
+      tmux, then make sure to `set -g focus-events on` in your tmux.conf)

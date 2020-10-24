@@ -81,3 +81,17 @@ set hidden
 
 " turn off mode indicator at bottom so jedi-vim call sigs in command line work correctly
 set noshowmode
+
+" vim-airline config
+let g:airline#extensions#tabline#enabled=1 " show tabline of all open buffers
+
+" define airline symbols dict if it doesn't exist
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" git branch symbol (for use with vim-fugitive)
+let g:airline_symbols.branch = '⎇ '
+
+" vim-gitgutter config
+set updatetime=100 " decrease vim's update time so diff markers appear quicker
