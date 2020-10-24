@@ -1,0 +1,36 @@
+#!/bin/bash
+#### Convenience script to install all required plugins ####
+
+color_dir=~/.vim/pack/color/start
+syntax_dir=~/.vim/pack/syntax/start
+dist_dir=~/.vim/pack/dist/start
+
+# make sure we have requisite directories
+echo "Creating requisite directories..."
+mkdir -p ~/.vim/pack/{color,syntax,dist}/start/
+printf "Done\n\n"
+
+printf "Cloning missing plugins (if any)...\n"
+# clone jedi-vim separately, since we need recursive flag
+if [ ! -d "$syntax_dir/jedi-vim" ]; then
+    git clone --recursive https://github.com/davidhalter/jedi-vim "$syntax_dir/jedi-vim"
+    echo
+fi
+
+# clone remaining plugins
+declare -A plugins=(["$color_dir/gruvbox"]='https://github.com/morhetz/gruvbox'
+                    ["$syntax_dir/python-syntax"]='https://github.com/vim-python/python-syntax'
+                    ["$syntax_dir/vim-javascript"]='https://github.com/pangloss/vim-javascript'
+                    ["$dist_dir/nerdtree"]='https://github.com/preservim/nerdtree'
+                    ["$dist_dir/vim-airline"]='https://github.com/vim-airline/vim-airline'
+                    ["$dist_dir/vim-fugitive"]='https://github.com/tpope/vim-fugitive'
+                    ["$dist_dir/vim-gitgutter"]='https://github.com/airblade/vim-gitgutter')
+
+for plugin_dir in "${!plugins[@]}"; do
+    if [ ! -d "$plugin_dir" ]; then
+        git clone "${plugins[$plugin_dir]}" "$plugin_dir"
+        echo
+    fi
+done
+
+echo "All missing plugins cloned"
