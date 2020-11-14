@@ -1,16 +1,12 @@
 colorscheme gruvbox
 set background=dark
 
-" set transparent background
-highlight Normal ctermbg=NONE
-
 " set timeouts so that we can escape from insert mode quickly
 " since <Esc> is a key code and doesn't need to have a large timeout
 set timeout ttimeoutlen=100 " milliseconds
 
 " highlight the current line with CursorLine
 set cursorline
-highlight CursorLine ctermbg=NONE
 
 " underline the current line when in insert mode
 autocmd InsertEnter * highlight CursorLine cterm=italic
