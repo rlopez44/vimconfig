@@ -1,6 +1,9 @@
 colorscheme gruvbox
 set background=dark
 
+" fix color issues by using true color (24-bit)
+set termguicolors
+
 " set timeouts so that we can escape from insert mode quickly
 " since <Esc> is a key code and doesn't need to have a large timeout
 set timeout ttimeoutlen=100 " milliseconds
