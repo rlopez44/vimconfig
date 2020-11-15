@@ -63,6 +63,10 @@ set incsearch " find matches as we type
 " shortcut to turn off highlight search
 nnoremap <silent><Leader><Space> :nohlsearch<CR>
 
+" vimrc shortcuts
+nnoremap <silent><Leader>ev :e ~/.vim/vimrc<CR>
+nnoremap <silent><Leader>sv :source ~/.vimrc<CR>
+
 " python-syntax plugin enable all
 let g:python_highlight_all=1
 
