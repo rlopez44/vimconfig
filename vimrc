@@ -57,6 +57,12 @@ set smartindent
 " so that vim loads all html files with django template syntax
 autocmd BufNewFile,BufRead *.html set filetype=htmldjango
 
+" search options
+set hlsearch " highlight matches
+set incsearch " find matches as we type
+" shortcut to turn off highlight search
+nnoremap <silent><Leader><Space> :nohlsearch<CR>
+
 " python-syntax plugin enable all
 let g:python_highlight_all=1
 
