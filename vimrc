@@ -11,12 +11,6 @@ set timeout ttimeoutlen=100 " milliseconds
 " highlight the current line with CursorLine
 set cursorline
 
-" underline the current line when in insert mode
-autocmd InsertEnter * highlight CursorLine cterm=italic
-
-" return to default CursorLine highlighting when in normal mode
-autocmd InsertLeave * highlight CursorLine cterm=NONE
-
 set directory=~/vimtmp//,. "for swap files
 set backupdir=~/vimtmp//,. "for backup files
 set undodir=~/vimtmp//,. "for undo files
