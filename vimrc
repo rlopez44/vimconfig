@@ -22,6 +22,12 @@ set swapfile "default on
 nnoremap <C-j> :bprev<CR>
 nnoremap <C-k> :bnext<CR>
 
+" shortcuts to switch between windows
+nnoremap [h <C-w>h
+nnoremap [j <C-w>j
+nnoremap [k <C-w>k
+nnoremap [l <C-w>l
+
 " insert single character at the cursor position in command mode
 nnoremap <Space> i_<Esc>r
 " insert single character after the cursor position in command mode
