@@ -85,6 +85,9 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+" use tabs for makefiles
+autocmd FileType make setlocal noexpandtab
+
 " so that buffers are hidden instead of unloaded when abandoned
 set hidden
 
