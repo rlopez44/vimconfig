@@ -79,6 +79,9 @@ let g:python_highlight_all=1
 " jedi-vim settings
 let g:jedi#show_call_signatures=2
 
+" vim-cpp-modern settings
+let g:cpp_member_highlight=1
+
 " replace tabs with four spaces
 set tabstop=4
 set shiftwidth=4

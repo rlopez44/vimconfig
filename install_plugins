@@ -21,6 +21,7 @@ fi
 declare -A plugins=(["$color_dir/gruvbox"]='https://github.com/morhetz/gruvbox'
                     ["$syntax_dir/python-syntax"]='https://github.com/vim-python/python-syntax'
                     ["$syntax_dir/vim-javascript"]='https://github.com/pangloss/vim-javascript'
+                    ["$syntax_dir/vim-cpp-modern"]='https://github.com/bfrg/vim-cpp-modern'
                     ["$dist_dir/nerdtree"]='https://github.com/preservim/nerdtree'
                     ["$dist_dir/vim-airline"]='https://github.com/vim-airline/vim-airline'
                     ["$dist_dir/vim-fugitive"]='https://github.com/tpope/vim-fugitive'
