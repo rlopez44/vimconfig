@@ -1,6 +1,9 @@
 let g:gruvbox_italic=1
-colorscheme gruvbox
+" we need background=dark to be set before specifying the colorscheme,
+" since gruvbox checks the background setting to determine what conceal
+" color to use with indentLine
 set background=dark
+colorscheme gruvbox
 
 " fix color issues by using true color (24-bit)
 set termguicolors
@@ -111,3 +114,8 @@ let g:airline_symbols.branch = '⎇ '
 
 " vim-gitgutter config
 set updatetime=100 " decrease vim's update time so diff markers appear quicker
+
+" indentLine config
+let g:indentLine_leadingSpaceChar='·'
+let g:indentLine_leadingSpaceEnabled=1
+nnoremap <silent><Leader>i :LeadingSpaceToggle<CR>
