@@ -12,19 +12,21 @@ new machine, do the following:
 
    so your `.vimrc` file will load the configuration in `~/.vim/vimrc` at runtime.
 
-## Plugins to Install
+## Installing Plugins
 
-The following plugins should be installed in `~/.vim/pack/` to finalize the configuration.
+To finalize the configuration, run `./install_plugins` to install the plugins that I use.
+The install script will create any necessary directories that don't yet exist and install
+each plugin in its appropriate directory. Below is a list of the plugins that the script
+will install:
 
-* Install to `~/.vim/pack/color/start/`
-    * [`gruvbox`](https://github.com/morhetz/gruvbox)
-* Install to `~/.vim/pack/syntax/start/`
-    * [`jedi-vim`](https://github.com/davidhalter/jedi-vim)
-    * [`python-syntax`](https://github.com/vim-python/python-syntax)
-    * [`vim-javascript`](https://github.com/pangloss/vim-javascript)
-* Install to `~/.vim/pack/dist/start/`
-    * [`nerdtree`](https://github.com/preservim/nerdtree)
-    * [`vim-airline`](https://github.com/vim-airline/vim-airline)
-    * [`vim-fugitive`](https://github.com/tpope/vim-fugitive)
-    * [`vim-gitgutter`](https://github.com/airblade/vim-gitgutter) (Note: if using
-      tmux, then make sure to `set -g focus-events on` in your tmux.conf)
+* [`gruvbox`](https://github.com/morhetz/gruvbox)
+* [`jedi-vim`](https://github.com/davidhalter/jedi-vim)
+* [`python-syntax`](https://github.com/vim-python/python-syntax)
+* [`vim-javascript`](https://github.com/pangloss/vim-javascript)
+* [`vim-cpp-modern`](https://github.com/bfrg/vim-cpp-modern)
+* [`nerdtree`](https://github.com/preservim/nerdtree)
+* [`vim-airline`](https://github.com/vim-airline/vim-airline)
+* [`vim-fugitive`](https://github.com/tpope/vim-fugitive)
+* [`vim-gitgutter`](https://github.com/airblade/vim-gitgutter) (Note: if using
+  tmux, then make sure to `set -g focus-events on` in your tmux.conf)
+* [`indentLine`](https://github.com/Yggdroot/indentLine)
