@@ -60,6 +60,9 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 " code folding
 set foldmethod=manual
 
+" shortcut to fold current curly brace delimited block
+nnoremap <leader>f zfa{
+
 " for auto indenting
 set autoindent
 set smartindent
