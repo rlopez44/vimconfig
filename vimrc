@@ -65,7 +65,7 @@ nnoremap <leader>f zfa{
 
 " for auto indenting
 set autoindent
-set smartindent
+filetype plugin indent on
 
 " so that vim loads all html files with django template syntax
 autocmd BufNewFile,BufRead *.html set filetype=htmldjango
