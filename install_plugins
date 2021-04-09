@@ -19,6 +19,7 @@ fi
 
 # clone remaining plugins
 declare -A plugins=(["$color_dir/gruvbox"]='https://github.com/morhetz/gruvbox'
+                    ["$color_dir/nord-vim"]='https://github.com/arcticicestudio/nord-vim'
                     ["$syntax_dir/python-syntax"]='https://github.com/vim-python/python-syntax'
                     ["$syntax_dir/vim-javascript"]='https://github.com/pangloss/vim-javascript'
                     ["$syntax_dir/vim-cpp-modern"]='https://github.com/bfrg/vim-cpp-modern'

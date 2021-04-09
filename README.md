@@ -20,6 +20,7 @@ each plugin in its appropriate directory. Below is a list of the plugins that th
 will install:
 
 * [`gruvbox`](https://github.com/morhetz/gruvbox)
+* [`nord-vim`](https://github.com/arcticicestudio/nord-vim)
 * [`jedi-vim`](https://github.com/davidhalter/jedi-vim)
 * [`python-syntax`](https://github.com/vim-python/python-syntax)
 * [`vim-javascript`](https://github.com/pangloss/vim-javascript)

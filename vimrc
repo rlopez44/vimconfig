@@ -1,9 +1,13 @@
-let g:gruvbox_italic=1
+"let g:gruvbox_italic=1
+let g:nord_italic=1
+let g:nord_italic_comments=1
+let g:nord_cursor_line_number_background=1
 " we need background=dark to be set before specifying the colorscheme,
 " since gruvbox checks the background setting to determine what conceal
 " color to use with indentLine
 set background=dark
-colorscheme gruvbox
+"colorscheme gruvbox
+colorscheme nord "goes with the Nordic GTK theme
 
 " fix color issues by using true color (24-bit)
 set termguicolors
