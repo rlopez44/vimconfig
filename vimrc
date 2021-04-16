@@ -12,6 +12,9 @@ colorscheme nord "goes with the Nordic GTK theme
 " fix color issues by using true color (24-bit)
 set termguicolors
 
+" uncomment if you want a transparent background
+highlight Normal ctermbg=NONE guibg=NONE
+
 " set timeouts so that we can escape from insert mode quickly
 " since <Esc> is a key code and doesn't need to have a large timeout
 set timeout ttimeoutlen=100 " milliseconds
