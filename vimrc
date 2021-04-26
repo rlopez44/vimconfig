@@ -1,3 +1,14 @@
+if &term ==# 'alacritty'
+    " hacky, but colors don't seem to work if $TERM=alacritty
+    let &term = 'xterm-256color'
+
+    " unsure why, but syntax seems to default to off when using alacritty
+    syntax on
+endif
+
+" fix color issues by using true color (24-bit)
+set termguicolors
+
 "let g:gruvbox_italic=1
 let g:nord_italic=1
 let g:nord_italic_comments=1
@@ -8,9 +19,6 @@ let g:nord_cursor_line_number_background=1
 set background=dark
 "colorscheme gruvbox
 colorscheme nord "goes with the Nordic GTK theme
-
-" fix color issues by using true color (24-bit)
-set termguicolors
 
 " uncomment if you want a transparent background
 highlight Normal ctermbg=NONE guibg=NONE
