@@ -2,9 +2,11 @@ if &term ==# 'alacritty'
     " hacky, but colors don't seem to work if $TERM=alacritty
     let &term = 'xterm-256color'
 
-    " unsure why, but syntax seems to default to off when using alacritty
-    syntax on
 endif
+
+" unsure why, but syntax seems to default to off when
+" using alacritty or MacOS terminal
+syntax on
 
 " fix color issues by using true color (24-bit)
 set termguicolors
