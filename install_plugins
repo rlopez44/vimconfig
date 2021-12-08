@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #### Convenience script to install all required plugins ####
 
 color_dir=~/.vim/pack/color/start
