@@ -1,7 +1,6 @@
 if &term ==# 'alacritty'
     " hacky, but colors don't seem to work if $TERM=alacritty
     let &term = 'xterm-256color'
-
 endif
 
 " unsure why, but syntax seems to default to off when
@@ -58,6 +57,10 @@ nnoremap <Tab><Space> a_<Esc>r
 set number
 " show relative line numbers
 set relativenumber
+
+" allow backspace over everything in insert mode
+" (on Mac with homebrew vim this wasn't the default)
+set backspace=indent,eol,start
 
 " function to toggle relative line numbers
 function! g:ToggleRelativeNumber()
