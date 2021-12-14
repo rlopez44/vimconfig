@@ -10,7 +10,7 @@ syntax on
 " fix color issues by using true color (24-bit)
 set termguicolors
 
-"let g:gruvbox_italic=1
+let g:gruvbox_italic=1
 let g:nord_italic=1
 let g:nord_italic_comments=1
 let g:nord_cursor_line_number_background=1
@@ -18,11 +18,11 @@ let g:nord_cursor_line_number_background=1
 " since gruvbox checks the background setting to determine what conceal
 " color to use with indentLine
 set background=dark
-"colorscheme gruvbox
-colorscheme nord "goes with the Nordic GTK theme
+colorscheme gruvbox
+" colorscheme nord "goes with the Nordic GTK theme
 
 " uncomment if you want a transparent background
-highlight Normal ctermbg=NONE guibg=NONE
+"highlight Normal ctermbg=NONE guibg=NONE
 
 " set timeouts so that we can escape from insert mode quickly
 " since <Esc> is a key code and doesn't need to have a large timeout
