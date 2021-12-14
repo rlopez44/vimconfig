@@ -31,3 +31,4 @@ will install:
 * [`vim-gitgutter`](https://github.com/airblade/vim-gitgutter) (Note: if using
   tmux, then make sure to `set -g focus-events on` in your tmux.conf)
 * [`indentLine`](https://github.com/Yggdroot/indentLine)
+* [`rust.vim`](https://github.com/rust-lang/rust.vim)
