@@ -5,7 +5,7 @@ endif
 
 " unsure why, but syntax seems to default to off when
 " using alacritty or MacOS terminal
-syntax on
+syntax enable
 
 " fix color issues by using true color (24-bit)
 set termguicolors
@@ -142,3 +142,6 @@ set updatetime=100 " decrease vim's update time so diff markers appear quicker
 let g:indentLine_leadingSpaceChar='·'
 let g:indentLine_leadingSpaceEnabled=1
 nnoremap <silent><Leader>i :LeadingSpaceToggle<CR>
+
+" rust.vim config
+let g:rustfmt_autosave = 1
