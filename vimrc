@@ -97,8 +97,8 @@ set incsearch " find matches as we type
 nnoremap <silent><Leader><Space> :nohlsearch<CR>
 
 " vimrc shortcuts
-nnoremap <silent><Leader>ev :e ~/.vim/vimrc<CR>
-nnoremap <silent><Leader>sv :source ~/.vimrc<CR>
+nnoremap <silent><Leader>ev :e $MYVIMRC<CR>
+nnoremap <silent><Leader>sv :source $MYVIMRC<CR>
 
 " python-syntax plugin enable all
 let g:python_highlight_all=1
