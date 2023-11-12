@@ -1,8 +1,3 @@
-if &term ==# 'alacritty'
-    " hacky, but colors don't seem to work if $TERM=alacritty
-    let &term = 'xterm-256color'
-endif
-
 " unsure why, but syntax seems to default to off when
 " using alacritty or MacOS terminal
 syntax enable
@@ -11,6 +6,7 @@ syntax enable
 set termguicolors
 
 let g:gruvbox_italic=1
+let g:gruvbox_contrast_dark='medium'
 let g:nord_italic=1
 let g:nord_italic_comments=1
 let g:nord_cursor_line_number_background=1
