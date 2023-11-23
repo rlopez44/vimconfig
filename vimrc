@@ -2,6 +2,8 @@
 " using alacritty or MacOS terminal
 syntax enable
 
+set nocompatible
+
 " fix color issues by using true color (24-bit)
 set termguicolors
 
