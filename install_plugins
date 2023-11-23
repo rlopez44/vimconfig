@@ -27,6 +27,8 @@ declare -A plugins=(["$color_dir/gruvbox"]='https://github.com/morhetz/gruvbox'
                     ["$dist_dir/vim-airline"]='https://github.com/vim-airline/vim-airline'
                     ["$dist_dir/vim-fugitive"]='https://github.com/tpope/vim-fugitive'
                     ["$dist_dir/vim-gitgutter"]='https://github.com/airblade/vim-gitgutter'
+                    ["$dist_dir/vim-lsp"]='https://github.com/prabirshrestha/vim-lsp.git'
+                    ["$dist_dir/vim-lsp-settings"]='https://github.com/mattn/vim-lsp-settings.git'
                     ["$dist_dir/indentLine"]='https://github.com/Yggdroot/indentLine'
                     ["$dist_dir/rust.vim"]='https://github.com/rust-lang/rust.vim')
 

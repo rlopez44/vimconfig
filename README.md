@@ -30,5 +30,7 @@ will install:
 * [`vim-fugitive`](https://github.com/tpope/vim-fugitive)
 * [`vim-gitgutter`](https://github.com/airblade/vim-gitgutter) (Note: if using
   tmux, then make sure to `set -g focus-events on` in your tmux.conf)
+* [`vim-lsp`](https://github.com/prabirshrestha/vim-lsp)
+* [`vim-lsp-settings`](https://github.com/mattn/vim-lsp-settings)
 * [`indentLine`](https://github.com/Yggdroot/indentLine)
 * [`rust.vim`](https://github.com/rust-lang/rust.vim)
