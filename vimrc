@@ -131,7 +131,8 @@ if !exists('g:airline_symbols')
 endif
 
 " git branch symbol (for use with vim-fugitive)
-let g:airline_symbols.branch = '⎇ '
+"let g:airline_symbols.branch = '⎇ '
+let g:airline_symbols.branch = '⌥'
 
 " vim-gitgutter config
 set updatetime=100 " decrease vim's update time so diff markers appear quicker
